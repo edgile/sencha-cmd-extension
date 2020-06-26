@@ -3,7 +3,7 @@
     "id": "sencha-cmd-task",
     "name": "SenchaCmd Task",
     "version": "1.0.0",
-    "publisher": "e.d. zaaijer",
+    "publisher": "E.D. Zaaijer",
     "public": true,
     "icons": {
         "default": "extension-icon.png"
@@ -42,7 +42,7 @@
     },
     "files": [
         {
-            "path": "sencha-cmd"
+            "path": "sencha-cmd-src"
         }
     ],
     "contributions": [
