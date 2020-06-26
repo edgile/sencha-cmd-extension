@@ -1,11 +1,11 @@
 {
     "id": "2DE87D08-197C-4A08-A7A9-B046FDF695ED",
     "name": "sencha-cmd",
-    "friendlyName": "Sencha-cmd",
-    "description": "Install sencha command",
+    "friendlyName": "Install sencha-cmd",
+    "description": "Install Sencha Command",
     "helpMarkDown": "Install sencha command in order to be used during build",
-    "category": "Build",
-    "author": "e.d. zaaijer",
+    "category": "Installation",
+    "author": "E.D. Zaaijer",
     "version": {
         "Major": 1,
         "Minor": 0,
@@ -35,7 +35,16 @@
     ],
     "minimumAgentVersion": "2.0.0",
     "instanceNameFormat": "SenchaCmd",
-    "inputs": [],
+	"inputs": [
+        {
+            "name": "downloaduri",
+            "type": "string",
+            "label": "Uri where SenchaCmd can be downloaded",
+            "defaultValue": "http://cdn.sencha.com/cmd/7.2.0.84/jre/SenchaCmd-7.2.0.84-windows-64bit.zip",
+            "helpMarkDown": "Uri from where SenchaCmd can be downloaded",
+            "required": "true"
+        }
+	],
     "execution": {
         "PowerShell3": {
             "target": "$(currentDirectory)\\sencha-cmd.ps1",

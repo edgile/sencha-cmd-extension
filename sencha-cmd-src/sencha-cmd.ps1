@@ -1,12 +1,12 @@
-$downloadurl = "http://cdn.sencha.com/cmd/7.2.0.84/jre/SenchaCmd-7.2.0.84-windows-64bit.zip"
+$downloaduri = Get-VstsInput -Name downloaduri -Require;
 $path = split-path $MyInvocation.MyCommand.Path
 
 Write-Output "Command path: $path"
-Write-Output "Download SenchaCmd: $downloadurl"
+Write-Output "Download SenchaCmd: $downloaduri"
 $start_time = Get-Date
 $output = $path + "\SenchaCmd.zip"
 
-(New-Object System.Net.WebClient).DownloadFile($downloadurl, $output)
+(New-Object System.Net.WebClient).DownloadFile($downloaduri, $output)
 
 Write-Output "Time taken (Download): $((Get-Date).Subtract($start_time).Seconds) second(s)"
 

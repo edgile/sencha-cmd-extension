@@ -1,10 +1,10 @@
 {
     "manifestVersion": 1,
     "id": "sencha-cmd-task",
-    "name": "SenchaCmd Task",
+    "name": "SenchaCmd installation task",
     "version": "1.0.0",
-    "publisher": "E.D. Zaaijer",
-    "public": true,
+    "publisher": "EDZaaijer",
+    "public": false,
     "icons": {
         "default": "extension-icon.png"
     },
@@ -37,7 +37,7 @@
             "path": "readme.md"
         },
         "license": {
-            "path": "license"
+            "path": "license.txt"
         }
     },
     "files": [
@@ -47,13 +47,13 @@
     ],
     "contributions": [
         {
-            "id": "2DE87D08-197C-4A08-A7A9-B046FDF695ED",
+            "id": "sencha-cmd.constribution",
             "type": "ms.vss-distributed-task.task",
             "targets": [
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "sencha-cmd"
+				"name": "sencha-cmd-src"
             }
         }
     ]
