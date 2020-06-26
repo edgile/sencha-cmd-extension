@@ -1,0 +1,60 @@
+{
+    "manifestVersion": 1,
+    "id": "sencha-cmd-task",
+    "name": "SenchaCmd Task",
+    "version": "1.0.0",
+    "publisher": "e.d. zaaijer",
+    "public": true,
+    "icons": {
+        "default": "extension-icon.png"
+    },
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "tags": [
+        "sencha command",
+        "installer generator"
+    ],
+    "description": "Tasks for installing SenchaCmd",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/edgile/sencha-cmd-extension"
+    },
+    "badges": [
+        {
+            "href": "https://github.com/edgile/sencha-cmd-extension",
+            "uri": "",
+            "description": ""
+        }
+    ],
+    "content": {
+        "details": {
+            "path": "readme.md"
+        },
+        "license": {
+            "path": "license"
+        }
+    },
+    "files": [
+        {
+            "path": "sencha-cmd"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "2DE87D08-197C-4A08-A7A9-B046FDF695ED",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "sencha-cmd"
+            }
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "id": "2DE87D08-197C-4A08-A7A9-B046FDF695ED",
+    "name": "sencha-cmd",
+    "friendlyName": "Sencha-cmd",
+    "description": "Install sencha command",
+    "helpMarkDown": "Install sencha command in order to be used during build",
+    "category": "Build",
+    "author": "e.d. zaaijer",
+    "version": {
+        "Major": 1,
+        "Minor": 0,
+        "Patch": 0
+    },
+    "links": {
+        "home": {
+            "uri": "https://github.com/edgile/sencha-cmd-extension"
+        },
+        "repository": {
+            "uri": "https://github.com/edgile/sencha-cmd-extension"
+        },
+        "issues": {
+            "uri": "https://github.com/edgile/sencha-cmd-extension/issues"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/edgile/sencha-cmd-extension"
+    },
+    "badges": [
+        {
+            "href": "https://github.com/edgile/sencha-cmd-extension",
+            "uri": "",
+            "description": ""
+        }
+    ],
+    "minimumAgentVersion": "2.0.0",
+    "instanceNameFormat": "SenchaCmd",
+    "inputs": [],
+    "execution": {
+        "PowerShell3": {
+            "target": "$(currentDirectory)\\sencha-cmd.ps1",
+            "argumentFormat": "",
+            "workingDirectory": "",
+            "platforms": [
+                "windows"
+            ]
+        }
+    }
+}
