@@ -25,15 +25,16 @@ Start-Process -Wait -PassThru .\SenchaCmd-7.2.0.84-windows-64bit.exe -ArgumentLi
 Write-Output "Time taken (Installation): $((Get-Date).Subtract($start_time).Seconds) second(s)"
 
 $javaOptions = "-Xms128m -Xmx2048m"
-[Environment]::SetEnvironmentVariable(
-    "_JAVA_OPTIONS",
-    $javaOptions,
-    [EnvironmentVariableTarget]::User)
+[Environment]::SetEnvironmentVariable("_JAVA_OPTIONS", $javaOptions, [EnvironmentVariableTarget]::Machine)
+Write-Output "javaOptions: " + $javaOptions
 	
 $env:Path += ";" + $path + "\sencha-cmd;"
 [Environment]::SetEnvironmentVariable(
     "Path",
     $env:Path,
-    [EnvironmentVariableTarget]::User)
+    [EnvironmentVariableTarget]::Machine)
+Write-Output "Path: " + $env:Path
+
+.\Sencha which
 	
 Remove-Item $output

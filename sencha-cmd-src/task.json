@@ -1,6 +1,6 @@
 {
     "id": "2DE87D08-197C-4A08-A7A9-B046FDF695ED",
-    "name": "sencha-cmd",
+    "name": "install-sencha-cmd",
     "friendlyName": "Install sencha-cmd",
     "description": "Install Sencha Command",
     "helpMarkDown": "Install sencha command in order to be used during build",
@@ -9,7 +9,7 @@
     "version": {
         "Major": 1,
         "Minor": 0,
-        "Patch": 0
+        "Patch": 6
     },
     "links": {
         "home": {
@@ -47,7 +47,7 @@
 	],
     "execution": {
         "PowerShell3": {
-            "target": "$(currentDirectory)\\sencha-cmd.ps1",
+            "target": "sencha-cmd.ps1",
             "argumentFormat": "",
             "workingDirectory": "",
             "platforms": [

@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "sencha-cmd-task",
     "name": "SenchaCmd installation task",
-    "version": "1.0.0",
+    "version": "1.0.6",
     "publisher": "EDZaaijer",
     "public": false,
     "icons": {
@@ -47,7 +47,7 @@
     ],
     "contributions": [
         {
-            "id": "sencha-cmd.constribution",
+            "id": "696c90b1-9f8c-424a-b03b-b789bb5945d3",
             "type": "ms.vss-distributed-task.task",
             "targets": [
                 "ms.vss-distributed-task.tasks"
