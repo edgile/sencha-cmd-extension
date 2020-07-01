@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "sencha-cmd-task",
     "name": "SenchaCmd installation task",
-    "version": "1.0.6",
+    "version": "1.0.10",
     "publisher": "EDZaaijer",
     "public": false,
     "icons": {
