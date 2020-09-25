@@ -9,7 +9,7 @@
     "version": {
         "Major": 1,
         "Minor": 0,
-        "Patch": 10
+        "Patch": 11
     },
     "links": {
         "home": {
@@ -40,9 +40,17 @@
             "name": "downloaduri",
             "type": "string",
             "label": "Uri where SenchaCmd can be downloaded",
-            "defaultValue": "http://cdn.sencha.com/cmd/7.2.0.84/jre/SenchaCmd-7.2.0.84-windows-64bit.zip",
+            "defaultValue": "http://cdn.sencha.com/cmd/7.3.0.19/jre/SenchaCmd-7.3.0.19-windows-64bit.zip",
             "helpMarkDown": "Uri from where SenchaCmd can be downloaded",
             "required": "true"
+        },
+        {
+            "name": "javaoptions",
+            "type": "string",
+            "label": "Set _JAVA_OPTIONS",
+            "defaultValue": "-Xms128m -Xmx2048m",
+            "helpMarkDown": "Set _JAVA_OPTIONS environment variable (leave blank to skip)",
+            "required": "false"
         }
 	],
     "execution": {
