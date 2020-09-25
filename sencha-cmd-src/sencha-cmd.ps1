@@ -1,5 +1,11 @@
-$downloaduri = Get-VstsInput -Name downloaduri -Require;
+$version = Get-VstsInput -Name version -Require;
 $javaoptions = Get-VstsInput -Name javaoptions;
+
+Write-Output $version
+Write-Output $javaoptions
+
+$downloaduri = "http://cdn.sencha.com/cmd/" + $version + "/jre/SenchaCmd-" + $version + "-windows-64bit.zip"
+$installerexe = ".\SenchaCmd-" + $version + "-windows-64bit.exe"
 
 $currentpath = split-path $MyInvocation.MyCommand.Path
 Write-Output $currentpath
@@ -23,10 +29,10 @@ Write-Output "Time taken (Unzip): $((Get-Date).Subtract($start_time).Seconds) se
 
 Write-Output "Start installation of SenchaCmd"
 $start_time = Get-Date
-Start-Process -Wait -PassThru .\SenchaCmd-7.3.0.19-windows-64bit.exe -ArgumentList "-q -dir /sencha-cmd"
+Start-Process -Wait -PassThru $installerexe -ArgumentList "-q -dir /sencha-cmd"
 
 Write-Output "Time taken (Installation): $((Get-Date).Subtract($start_time).Seconds) second(s)"
-If($javaoptions != ""){
+if($javaoptions -ne ""){
 	Write-Host "##vso[task.setvariable variable=_JAVA_OPTIONS;]$javaoptions";
 }
 

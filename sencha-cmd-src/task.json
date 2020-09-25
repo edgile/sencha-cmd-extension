@@ -9,7 +9,7 @@
     "version": {
         "Major": 1,
         "Minor": 0,
-        "Patch": 11
+        "Patch": 13
     },
     "links": {
         "home": {
@@ -37,11 +37,11 @@
     "instanceNameFormat": "SenchaCmd",
 	"inputs": [
         {
-            "name": "downloaduri",
+            "name": "version",
             "type": "string",
-            "label": "Uri where SenchaCmd can be downloaded",
-            "defaultValue": "http://cdn.sencha.com/cmd/7.3.0.19/jre/SenchaCmd-7.3.0.19-windows-64bit.zip",
-            "helpMarkDown": "Uri from where SenchaCmd can be downloaded",
+            "label": "Version of SenchaCmd",
+            "defaultValue": "7.3.0.19",
+            "helpMarkDown": "Version of SenchaCmd to download/install",
             "required": "true"
         },
         {
