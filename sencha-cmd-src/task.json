@@ -9,7 +9,7 @@
     "version": {
         "Major": 1,
         "Minor": 0,
-        "Patch": 13
+        "Patch": 14
     },
     "links": {
         "home": {
@@ -40,7 +40,7 @@
             "name": "version",
             "type": "string",
             "label": "Version of SenchaCmd",
-            "defaultValue": "7.3.0.19",
+            "defaultValue": "7.4.0.45",
             "helpMarkDown": "Version of SenchaCmd to download/install",
             "required": "true"
         },

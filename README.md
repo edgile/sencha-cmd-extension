@@ -1,5 +1,5 @@
 # sencha-cmd-extension
-Installer for sencha-cmd within a azure pipeline
+Installer for sencha-cmd within an azure pipeline
 
 Build extension:
 
